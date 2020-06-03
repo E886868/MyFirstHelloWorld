@@ -1,7 +1,37 @@
 #include <stdio.h>
+#include <string.h>
+
+void red()
+{
+	printf("\033[1;31m");
+}
+
+void mag()
+{
+	printf("\033[1;35m");
+}
+
+void cyon()
+{
+	printf("\033[1;36m");
+}
 
 int main()
 {
-    printf("\033[93mGoodbye  \033[92mworld!\n");
-    return 0;
+	cyon();
+	printf("Hello");
+	mag();
+	printf(" World\n");
 }
+
+/*{
+	char str1[1];
+
+	strcpy(str1, red());
+
+	strcat(str1, "Hello World\n");
+
+	printf(str1);
+
+   	return 0;
+}*/
